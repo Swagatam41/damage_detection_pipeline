@@ -83,9 +83,9 @@ class YOLOv8Ensemble:
 # Initialize the ensemble model
 @st.cache_resource
 def load_model():
-    model_paths = ['/teamspace/studios/this_studio/ultralytics/ultralytics/ultralytics/best_discussed_with_team_then_trained_14thoct_2024.pt', 
-                   '/teamspace/studios/this_studio/ultralytics/ultralytics/ultralytics/best_TRIAL6.pt', 
-                   '/teamspace/studios/this_studio/ultralytics/ultralytics/ultralytics/best_TRIAL8.pt']
+    model_paths = ['./best_discussed_with_team_then_trained_14thoct_2024.pt', 
+                   './best_TRIAL6.pt', 
+                   './best_TRIAL8.pt']
     return YOLOv8Ensemble(model_paths)
 
 ensemble = load_model()
